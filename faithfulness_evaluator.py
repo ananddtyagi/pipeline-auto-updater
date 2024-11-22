@@ -1,7 +1,7 @@
 from typing_extensions import override
-from evaluation.binary_evaluator import BinaryEvaluator
+from binary_evaluator import BinaryEvaluator
 from llama_index.core.evaluation.faithfulness import FaithfulnessEvaluator as LlamaIndexFaithfulnessEvaluator
-from evaluation.evaluation_result import EvaluationResult
+from evaluation_result import EvaluationResult
 from llama_index.core.evaluation.base import EvaluationResult as LlamaIndexEvaluationResult
 class FaithfulnessEvaluator(BinaryEvaluator):
     def __init__(self) -> None:

@@ -1,7 +1,7 @@
 from typing_extensions import override
-from evaluation.binary_evaluator import BinaryEvaluator
-from evaluation.evaluation_result import EvaluationResult
-from evaluation.evaluation_templates import CORRECTNESS_EVALUATION_TEMPLATE
+from binary_evaluator import BinaryEvaluator
+from evaluation_result import EvaluationResult
+from evaluation_templates import CORRECTNESS_EVALUATION_TEMPLATE
 
 
 class CorrectnessEvaluator(BinaryEvaluator):

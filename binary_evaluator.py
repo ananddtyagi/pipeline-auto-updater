@@ -5,7 +5,7 @@ from collections.abc import Coroutine
 from llama_index.core.base.response.schema import Response
 from openai import AsyncOpenAI
 
-from evaluation.evaluation_result import EvaluationResult
+from evaluation_result import EvaluationResult
 
 class BinaryEvaluator():
     def __init__(self) -> None:
