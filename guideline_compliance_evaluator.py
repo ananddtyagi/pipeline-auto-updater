@@ -1,7 +1,7 @@
 from typing_extensions import override
-from evaluation.binary_evaluator import BinaryEvaluator
-from evaluation.evaluation_result import EvaluationResult
-from evaluation.evaluation_templates import GENERAL_GUIDELINES, GUIDELINES_CHOOSING_TEMPLATE, GUIDELINES_EVALUATION_TEMPLATE, GULAQ_GUIDELINES
+from binary_evaluator import BinaryEvaluator
+from evaluation_result import EvaluationResult
+from evaluation_templates import GENERAL_GUIDELINES, GUIDELINES_CHOOSING_TEMPLATE, GUIDELINES_EVALUATION_TEMPLATE, GULAQ_GUIDELINES
 class GuidelineComplianceEvaluator(BinaryEvaluator):
     def __init__(self) -> None:
         super().__init__()
