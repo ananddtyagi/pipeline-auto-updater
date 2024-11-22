@@ -45,157 +45,72 @@ CORRECTNESS_EVALUATION_TEMPLATE = '''
     <examples>
     <example>
     <user_query>
-    How can I choose portfolios for certain goals? Say I have to buy a house in the next 5-6 years or for some mid-term goal which takes around 15 years. Are you planning to curate such small cases also?
+    What is the capital of France?
     </user_query>
 
     <reference_answer>
-    To choose portfolios for specific goals such as buying a house in the next 5-6 years or for a mid-term goal of around 15 years, you should consider your risk tolerance, investment horizon, and priority of goal. If you are investing to buy for a house, the priority of goal is high and hence your risk tolerance levels should be on the safer side.
-
-    Gulaq offers investment portfolios in 4 variants, each with a different mix of equity and fixed income investments, suitable for various risk profiles. 
-
-    Gulaq Gear 6 | 100% Equity, 0% Debt | Aggressive 
-    Gulaq Gear 5 | 80% Equity, 20% Debt | Moderate to Aggressive
-    Gulaq Gear 4 | 60% Equity, 40% Debt | Moderate 
-    Gulaq Gear 3 | 40% Equity, 60% Debt | Conservative 
-
-    You should evaluate your risk tolerance, investment horizon, and the priority to goal to select the most appropriate portfolio.
+    The capital of France is Paris.
     </reference_answer>
     <generated_answer>
-    To choose portfolios for specific goals such as buying a house in the next 5-6 years or for a mid-term goal of around 15 years, you should consider your risk tolerance, investment horizon, and financial objectives. Gulaq offers investment portfolios in 6 variants, each with a different mix of equity and fixed income investments, suitable for various risk profiles. However, specific small cases curated for particular goals like buying a house or mid-term goals are not mentioned in the provided information.
+    The capital of France is Paris.
     </generated_answer>
 
     <ideal_output>
     <analysis>
     a. Key points in the reference answer:
-    - Consider risk tolerance, investment horizon, and priority of goal
-    - For buying a house, priority is high, so risk tolerance should be lower
-    - Gulaq offers 4 portfolio variants with different equity/debt mixes
-    - Evaluate risk tolerance, investment horizon, and priority to select the appropriate portfolio
+    - The capital of France is Paris.
 
     b. Comparison of key points:
-    - The generated answer mentions considering risk tolerance, investment horizon, and financial objectives, which aligns with the reference answer
-    - The generated answer states Gulaq offers 6 portfolio variants, while the reference answer mentions 4
-    - The generated answer does not provide details on the specific portfolio variants or their equity/debt mixes
-    - The generated answer does not mention the importance of goal priority in selecting a portfolio
+    - The generated answer correctly states that the capital of France is Paris.
 
     c. Additional relevant information in the generated answer:
-    - The generated answer explicitly states that specific small cases curated for particular goals are not mentioned in the provided information
+    - No additional information is provided, but none is needed.
 
     d. Overall accuracy and completeness assessment:
-    - The generated answer captures some key concepts but lacks important details
-    - The discrepancy in the number of portfolio variants (6 vs 4) is a significant error
-    - The omission of specific portfolio details and the importance of goal priority reduces the answer's completeness
-    - The additional statement about the lack of information on specific small cases is relevant and accurate
+    - The generated answer is accurate and complete.
 
-    After careful analysis, I can conclude that the generated answer is only partially correct but contains some inaccuracies and omissions which make it incorrect.
-
-    </analysis>
-    <evaluation>
-    Result: FAIL
-    Feedback: The generated answer correctly identifies some key factors to consider when choosing portfolios for specific goals, such as risk tolerance and investment horizon. However, it contains a significant error in stating that Gulaq offers 6 portfolio variants instead of the correct 4. Additionally, the generated answer lacks important details about the specific portfolio options and their equity/debt mixes. It also fails to mention the importance of goal priority in selecting an appropriate portfolio, particularly for high-priority goals like buying a house. The statement about the lack of information on specific small cases curated for particular goals is accurate and relevant. Overall, while the answer provides some correct information, its inaccuracies and omissions make it incorrect.
-    </evaluation>
-    </ideal_output>
-    </example>
-
-    <example>
-    <user_query>
-    Why not do rebalancing on need basis instead?
-    </user_query>
-
-    <reference_answer>
-    Rebalancing on a need basis has been tested in the past, but it has not yielded the best results. The best results have been observed when rebalancing is done on a monthly basis. This is because rebalancing too frequently, such as on a weekly basis, can significantly increase transaction costs, which can negatively impact overall performance. Monthly rebalancing strikes a balance between maintaining the desired asset allocation and minimizing transaction costs.
-    </reference_answer>
-
-    <generated_answer>
-    While it is possible to do rebalancing on a need basis, the best results have been observed when rebalancing is done on a monthly basis. Rebalancing too frequently, such as on a weekly basis, can increase transaction costs, which can negatively impact overall performance. Monthly rebalancing strikes a good balance between maintaining the desired asset allocation and minimizing transaction costs.
-    </generated_answer>
-
-    <ideal_output>
-    <analysis>
-    a. Key points in the reference answer:
-    - Rebalancing on a need basis has been tested but didn't yield the best results
-    - Best results are observed with monthly rebalancing
-    - Too frequent rebalancing (e.g., weekly) increases transaction costs
-    - Increased transaction costs negatively impact overall performance
-    - Monthly rebalancing balances desired asset allocation and minimizing costs
-
-    b. Comparison of key points:
-    - The generated answer acknowledges the possibility of need-based rebalancing
-    - It correctly states that monthly rebalancing yields the best results
-    - It mentions that too frequent rebalancing (weekly) increases transaction costs
-    - It notes that increased transaction costs negatively impact performance
-    - It concludes that monthly rebalancing strikes a good balance
-
-    c. Additional relevant information in the generated answer:
-    - No significant additional information is provided
-
-    d. Overall accuracy and completeness assessment:
-    - The generated answer covers all the main points from the reference answer
-    - It accurately represents the key concepts and reasoning behind the rebalancing strategy
-    - The language used is slightly different but conveys the same information
-    - The only minor omission is not explicitly stating that need-based rebalancing has been tested in the past
-
-    After careful analysis, I can conclude that the generated answer is correct and closely aligns with the reference answer.
+    After careful analysis, I can conclude that the generated answer is correct.
 
     </analysis>
     <evaluation>
     Result: PASS
-    Feedback: The generated answer accurately captures the key points from the reference answer regarding rebalancing strategies. It correctly explains that while rebalancing on a need basis is possible, monthly rebalancing has been found to yield the best results. The answer also accurately describes the drawbacks of too frequent rebalancing, such as increased transaction costs, and how these can negatively impact overall performance. The conclusion that monthly rebalancing strikes a good balance between maintaining desired asset allocation and minimizing transaction costs is consistent with the reference answer. While the generated answer doesn't explicitly mention that need-based rebalancing has been tested in the past, this minor omission doesn't significantly impact the overall correctness of the response. The information provided is accurate, relevant, and adequately addresses the user's query about why rebalancing isn't done on a need basis.
+    Feedback: The generated answer accurately states that the capital of France is Paris, which is consistent with the reference answer. The response is both accurate and complete.
     </evaluation>
     </ideal_output>
     </example>
 
     <example>
     <user_query>
-    How does the performance of Gulaq Gear 6 compare with other similar smallcases or mutual funds?
+    What is the largest planet in our solar system?
     </user_query>
 
     <reference_answer>
-    As of June 2024, Gulaq Gear 6 has generated 24% year-to-date (YTD) returns versus 17% BSE 500 returns, marking an alpha of 7%.
-
-    Period        Smallcase_G6        Benchmark_G6        Alpha
-    1M        0.4%        0.8%        -0.4%
-    3M        6.1%        5.2%        0.9%
-    6M        25.6%        17.7%        7.9%
-    1Y        71.4%        34.7%        36.7%
-    2Y        55.6%        22.5%        33.1%
-    3Y        41.0%        17.7%        23.3%
-    Since Live (May 2020)        53.2%        25.0%        28.2%
-
-    For comparison of Gulaq's performance with other smallcase, you can visit the smallcase platform.
+    The largest planet in our solar system is Jupiter.
     </reference_answer>
-
     <generated_answer>
-    The provided information does not include specific performance comparisons between Gulaq Gear 6 and other similar smallcases or mutual funds. For detailed performance comparisons, you may need to refer to Gulaq's official resources or contact their support.
+    The largest planet in our solar system is Saturn.
     </generated_answer>
 
     <ideal_output>
     <analysis>
     a. Key points in the reference answer:
-    - The reference answer provides a detailed table comparing Gulaq Gear 6's performance with the BSE 500 index over different time periods.
-    - It mentions the alpha value of 7% for Gulaq Gear 6.
-    - It suggests that for other comparisons, the user can visit the smallcase platform.
+    - The largest planet in our solar system is Jupiter.
 
     b. Comparison of key points:
-    - The generated answer does not provide any information about the performance of Gulaq Gear 6 compared to other smallcases or mutual funds.
-    - It does not mention the alpha value of 7% for Gulaq Gear 6.
-    - It does not suggest that the user can visit the smallcase platform for other comparisons.
-    - It does reference that the user can contact Gulaq's support for more information.
+    - The generated answer incorrectly states that the largest planet is Saturn, while the reference answer correctly states it is Jupiter.
 
     c. Additional relevant information in the generated answer:
-    - No significant additional information is provided
+    - No additional relevant information is provided.
 
     d. Overall accuracy and completeness assessment:
-    - The generated answer does not provide any information about the performance of Gulaq Gear 6 compared to other smallcases or mutual funds.
-    - It does not mention the alpha value of 7% for Gulaq Gear 6.
-    - It does not suggest that the user can visit the smallcase platform for other comparisons.
-    - It does reference that the user can contact Gulaq's support for more information, but it is too generic.
+    - The generated answer is incorrect as it provides the wrong information.
 
     After careful analysis, I can conclude that the generated answer is incorrect.
+
     </analysis>
     <evaluation>
     Result: FAIL
-    Feedback: The generated answer does not provide any information about the performance of Gulaq Gear 6 compared to other smallcases or mutual funds. It does not mention the alpha value of 7% for Gulaq Gear 6. It does not suggest that the user can visit the smallcase platform for other comparisons. 
+    Feedback: The generated answer incorrectly states that the largest planet in our solar system is Saturn, while the correct answer is Jupiter. This is a significant error, and the response fails to meet the correctness criteria.
     </evaluation>
     </ideal_output>
     </example>
@@ -313,33 +228,6 @@ GENERAL_GUIDELINES = [(
     "The response should provide specific numerical details if the user asks OR say that it cannot do so for a specific reason.\n"
 )]
 
-GULAQ_GUIDELINES = [
-    (  "While mentioning returns, you should also specify which month.\n"
-        "Draw a clear line between backtested data and live data if either is mentioned.\n"),
-    ("If the user:\n"
-     "- asks about Gulaq PMS, Long Alpha, Estee PMS\n"
-     "complaints about risk OR slippage in Gulaq Gear 6\n"
-     "mentions an investment sum greater than 30 lakhs\n"
-     "you should provide this response:\n"
-        "Need more help? Reach out to our expert PMS team that will guide you on how to get started.\n"
-        "Website: https://pms.esteeadvisors.com/\n"
-        "Email: PMS@esteeadvisors.com\n"
-        "WhatsApp/Dial: +91-8826408100\n"),
-    ("If the user:\n"
-     "- asks about operational questions without specific answers\n"
-     "- has grievances with Gulaq Portfolio or smallcase\n"
-     "you should provide this response:\n"
-        "If you need more help, reach out to our support team and we will do our best to assist you in this matter.\n"
-        "Email: support@gulaq.com\n"
-        "WhatsApp/Dial: +91-9818894632\n"),
-    ("If the user:\n"
-     "- asks about questions related to rebalancing\n"
-     "- asks about stock-specific or sector-specific questions\n"
-     "you should provide this response:\n"
-        "I am unable to assist you with this matter. Please bring your questions to our Rebalancing AMA webinar, "
-        "which we conduct every month on YouTube.\n"
-        "YouTube: https://www.youtube.com/@Gulaq/streams\n")
-]
 
 GUIDELINES_EVALUATION_TEMPLATE = '''
     You are an expert evaluation system for a question-answering chatbot. Your task is to judge if the generated answer follows the guidelines given.
@@ -450,4 +338,3 @@ GUIDELINES_CHOOSING_TEMPLATE = '''
     <analysis>
 
     '''
-
