@@ -42,17 +42,16 @@ const FileUpload = ({ onDataLoaded }) => {
   };
 
   return (
-    <div className="file-upload">
+    <div className="m-5 p-5 border-2 border-dashed border-gray-300 rounded-lg text-center">
       <input
         type="file"
         ref={fileInputRef}
         accept=".csv"
         onChange={handleFileUpload}
-        className="file-input"
+        className="p-2 text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
       />
     </div>
   );
 };
 
 export default FileUpload;
-

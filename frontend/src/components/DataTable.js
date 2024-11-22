@@ -33,7 +33,7 @@ const DataTable = ({ data, onDataUpdate }) => {
           onChange={(e) => setEditValue(e.target.value)}
           onBlur={() => handleSave(row.id, field)}
           autoFocus
-          className="edit-textarea"
+          className="w-full min-h-[24px] p-1 border border-blue-500 rounded resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       );
     }
@@ -41,7 +41,7 @@ const DataTable = ({ data, onDataUpdate }) => {
     return (
       <div
         onClick={() => isEditableField && handleEdit(row.id, field, value)}
-        className={`cell-content ${isEditableField ? 'editable' : ''}`}
+        className={`min-h-[24px] break-words ${isEditableField ? 'cursor-pointer hover:bg-gray-100' : ''}`}
       >
         {value}
       </div>
@@ -49,25 +49,25 @@ const DataTable = ({ data, onDataUpdate }) => {
   };
 
   return (
-    <div className="table-container">
-      <table className="data-table">
+    <div className="m-5 overflow-x-auto">
+      <table className="w-full border-collapse">
         <thead>
           <tr>
-            <th>Input</th>
-            <th>Expected Output</th>
-            <th>Bot Output</th>
-            <th>Notes</th>
-            <th>Better Answer</th>
+            <th className="border border-gray-300 bg-gray-100 p-3 font-semibold text-left">Input</th>
+            <th className="border border-gray-300 bg-gray-100 p-3 font-semibold text-left">Expected Output</th>
+            <th className="border border-gray-300 bg-gray-100 p-3 font-semibold text-left">Bot Output</th>
+            <th className="border border-gray-300 bg-gray-100 p-3 font-semibold text-left">Notes</th>
+            <th className="border border-gray-300 bg-gray-100 p-3 font-semibold text-left">Better Answer</th>
           </tr>
         </thead>
         <tbody>
           {data.map(row => (
-            <tr key={row.id}>
-              <td>{renderCell(row, 'input', row.input)}</td>
-              <td>{renderCell(row, 'expectedOutput', row.expectedOutput)}</td>
-              <td>{renderCell(row, 'botOutput', row.botOutput)}</td>
-              <td>{renderCell(row, 'notes', row.notes)}</td>
-              <td>{renderCell(row, 'betterAnswer', row.betterAnswer)}</td>
+            <tr key={row.id} className="even:bg-gray-50 hover:bg-gray-100">
+              <td className="border border-gray-300 p-3">{renderCell(row, 'input', row.input)}</td>
+              <td className="border border-gray-300 p-3">{renderCell(row, 'expectedOutput', row.expectedOutput)}</td>
+              <td className="border border-gray-300 p-3">{renderCell(row, 'botOutput', row.botOutput)}</td>
+              <td className="border border-gray-300 p-3">{renderCell(row, 'notes', row.notes)}</td>
+              <td className="border border-gray-300 p-3">{renderCell(row, 'betterAnswer', row.betterAnswer)}</td>
             </tr>
           ))}
         </tbody>
