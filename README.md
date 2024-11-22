@@ -8,7 +8,6 @@ This framework provides a comprehensive evaluation system for assessing language
 ### Prerequisites
 - Python 3.8 or higher
 - OpenAI API key
-- Supabase credentials
 
 ### Setup Steps
 1. Clone the repository:
@@ -16,12 +15,10 @@ git clone <repository-url>
 cd <repository-name>
 
 2. Install required dependencies:
-pip install llama-index openai typing-extensions nest-asyncio pydantic supabase
+pip install llama-index openai typing-extensions nest-asyncio pydantic
 
 3. Configure environment variables:
 export OPENAI_API_KEY="your-api-key"
-export SUPABASE_URL="your-supabase-url"
-export SUPABASE_KEY="your-supabase-key"
 
 ## Usage Instructions
 
@@ -80,11 +77,9 @@ The evaluation results will be saved in an `evaluation_v{version}` directory, co
 - `typing-extensions`: Enhanced type hinting support
 - `nest-asyncio`: Async operation handling
 - `pydantic`: Data validation
-- `supabase`: Database interactions
 
 ### API Requirements
 - OpenAI API access
-- Supabase database access
 
 ## Contributing
 
